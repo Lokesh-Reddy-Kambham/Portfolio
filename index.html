@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="container">
+        <nav class="flex">  
+            <div class="bold">Lokesh Reddy</div>
+            <div>
+                <ul class="nav-bar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container flex">
+            <div class="hero">
+                <p class="bold">Hello, I'm</p>
+                <h1>Lokesh Reddy Kambham</h1>
+                <hr>
+                <h2>Python Developer | SQL Developer | Web Developer</h2>
+                <div>
+                    <a href="#projects" class="blue-btn">View Projects</a>
+                    <a href="./assets/Kambham_Lokesh_Reddy.pdf" download class="resume">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/photo.png" 
+                alt="developer with smile" class="profile-img"/>
+            </div>
+        </section>
+        <section id="about" class="container">
+            <h2>About</h2>
+            <hr>
+            <div class="flex">
+                <img src="./assets/photo.png" alt="Developer with smile" class="profile-img"/>
+                <div class="content">  
+                    <p>I am a technology enthusiast with a strong interest in software development and problem solving. I enjoy building web applications and working with data using technologies like Python and SQL. I focus on writing clean, efficient code and continuously improving my technical skills through projects and practical learning. My goal is to grow as a developer and contribute to building useful and impactful digital solutions.
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>HTML & CSS</li>
+                        <li>Responsive Design</li>
+                        <li>JavaScript</li>
+                        <li>Flask</li>
+                        <li>DSA</li>
+                    </ul>
+                </div>  
+            </div>
+        </section>
+        <section id="skills" class="container">
+            <h2>My Skills</h2>
+            <hr>
+            <div class="flex">
+                <div id="python" class="skill">
+                    <h3>Python</h3>
+                    <ul>
+                        <li>OOP</li>
+                        <li>File handling</li>
+                        <li>Data Structures</li>
+                        <li>Functional Programming</li>
+                    </ul>
+                </div>
+                <div id="sql" class="skill">
+                    <h3>SQL</h3>
+                    <ul>
+                        <li>Joins</li>
+                        <li>SubQueries</li>
+                        <li>Triggers & Procedures</li>
+                        <li>Views</li>
+                    </ul>
+                </div>
+                <div id="web" class="skill">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Responsive Design</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <hr>
+            <div class="flex">
+                <div class="project-card">
+                    <img src="./assets/frontend-playground-preview.png" alt="frontend playground project" class="project-img">
+                    <div>
+                        <h3>FrontEnd Playground</h3>
+                        <p>UI components built using HTML , CSS & JavaScript</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="https://github.com/Lokesh-Reddy-Kambham/Frontend-Playground" 
+                        class="github-link blue-btn" target="_blank">GitHub</a>
+                        <a href="https://lokesh-reddy-kambham.github.io/Frontend-Playground/" class="live-demo" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                <img src="./assets/elitecart-preview.png" alt="elitecart e-commerce platform" class="project-img">
+                    <div>
+                        <h3>EliteCart</h3>
+                        <p>E-commerce Web Application using Django</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="https://github.com/Lokesh-Reddy-Kambham/Elite-Cart" class="github-link blue-btn">GitHub</a>
+                        <a href="" class="live-demo">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="github" class="container">
+            <h2>GitHub</h2>
+            <p>
+                <b>GitHub Profile: </b>
+                <a href="https://github.com/Lokesh-Reddy-Kambham" target="_blank" class="github-link">
+                github.com/Lokesh-Reddy-Kambham
+                </a>
+            </p>
+            <img 
+                src="https://github-readme-activity-graph.vercel.app/graph?username=Lokesh-Reddy-Kambham&theme=github-dark&hide_border=true" class="github-img">
+        </section>
+    </main>
+    <footer id="contact" class="container">
+        <h2>Contact Me</h2>
+        <hr>
+        <div class="flex" id="flex2">
+            <div class="connect">
+                <p><b>Email: </b>kambhamlokeshreddy@gmail.com</p>
+                <p><b>Linkedin: </b>linkedin.com/in/lokesh-reddy-kambham/</p>
+                <p><b>GitHub: </b>github.com/Lokesh-Reddy-Kambham</p>
+            </div>
+            <div class="message">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="message">
+                </textarea>
+                <a class="blue-btn">Send Message</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
