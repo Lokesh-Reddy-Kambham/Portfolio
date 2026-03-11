@@ -9,7 +9,7 @@ The portfolio highlights my work in **Python, SQL, and Web Development**, along 
 ## 🚀 Live Website
 
 🔗 **Portfolio:**
-https://lokesh-reddy-kambham.github.io/your-portfolio-repo/
+https://lokesh-reddy-kambham.github.io/Portfolio/
 
 ---
 

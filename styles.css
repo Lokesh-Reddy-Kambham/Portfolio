@@ -4,12 +4,17 @@ html{
     scroll-behavior: smooth;
 }
 
+*{
+    box-sizing:border-box;
+}
+
 body{
     background: radial-gradient(circle at 20% 20%, #1f2a44 0%, #0f172a 40%),
                 radial-gradient(circle at 80% 30%, #1e293b 0%, #020617 60%),
                 #020617;
     color: #e2e8f0;
     font-family: "Inter", sans-serif;
+    margin:0;
 }
 
 
@@ -54,6 +59,10 @@ nav{
 .nav-bar{
     display:flex;
     list-style:none;
+    padding:0;
+    margin:0;
+    flex-wrap:wrap;
+    justify-content:flex-end;
 }
 
 .nav-bar li{
@@ -86,7 +95,8 @@ nav{
 /* PROFILE IMAGE */
 
 .profile-img{
-    width:320px;
+    width:100%;
+    max-width:320px;
     border-radius:20px;
     object-fit:cover;
     box-shadow:0 10px 30px rgba(0,0,0,0.4);
@@ -108,6 +118,9 @@ nav{
     display:flex;
     justify-content:space-evenly;
     font-weight:bold;
+    flex-wrap:wrap;
+    gap:10px 18px;
+    padding-left:20px;
 }
 
 
@@ -142,7 +155,8 @@ nav{
 .skill{
     background: linear-gradient(135deg,#2F3E55,#3F5068);
     border-radius:8px;
-    width:280px;
+    width:100%;
+    max-width:280px;
 }
 
 .skill h3{
@@ -176,6 +190,8 @@ nav{
     border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
     overflow:hidden;
+    width:100%;
+    max-width:520px;
 }
 
 .project-card:hover{
@@ -219,14 +235,18 @@ nav{
 .live-demo:hover{
     background:#111827;
 }
+
 /* GitHub Section */
+
 .github-link{
     text-decoration: none;
     color:#e2e8f0;
 }
+
 .github-link:hover{
     color: yellowgreen;
 }
+
 .github-img{
     width:80%;
     margin:20px auto;
@@ -239,7 +259,8 @@ nav{
 
 .connect,
 .message{
-    width:50%;
+    width:100%;
+    max-width:50%;
     padding:10px;
 }
 
@@ -250,10 +271,10 @@ nav{
 
 .message input,
 .message textarea{
-    width:90%;
+    width:100%;
     display:block;
     padding:10px;
-    margin:10px;
+    margin:10px 0;
     border-radius:6px;
     border:none;
 }
@@ -268,4 +289,97 @@ nav{
 
 .message button:hover{
     background:#1d4ed8;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px){
+    .flex{
+        gap:24px;
+    }
+
+    .container{
+        margin:16px;
+        padding:20px;
+    }
+
+    .project-card{
+        max-width:100%;
+    }
+}
+
+@media (max-width: 768px){
+    .flex{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .nav-bar{
+        justify-content:flex-start;
+    }
+
+    .nav-bar li{
+        margin:4px 8px 4px 0;
+        padding:6px 8px;
+    }
+
+    .hero{
+        text-align:center;
+        padding:0;
+    }
+
+    .hero div{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .resume{
+        margin-left:0;
+    }
+
+    #home .profile-img,
+    #about .profile-img{
+        margin:0 auto;
+    }
+
+    .skill{
+        max-width:100%;
+    }
+
+    .connect,
+    .message{
+        max-width:100%;
+    }
+
+    .github-img{
+        width:100%;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        margin:10px;
+        padding:16px;
+    }
+
+    .hero h1{
+        font-size:1.6rem;
+    }
+
+    .hero h2{
+        font-size:1rem;
+    }
+
+    .project-img{
+        height:170px;
+    }
 }
